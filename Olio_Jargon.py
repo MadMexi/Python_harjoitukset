@@ -110,7 +110,7 @@ class OmaTurtle(turtle.Turtle):
     def piirranimi(self, nimitaulukko):
          #KOODAA TAMA
  
-pekka = OmaTurtle()
+pekka = OmaTurtle() #Pekka on kilpikonna
 
 
 
