@@ -7,16 +7,17 @@
 # x = summa(input(),input())
 # print(x)
 
-# 2.Tee funktio "alkiot", jolle annetaan luvut a ja b. se palauttaa listana numerot a:sta b:hen. EI TOIMI
+# 2.Tee funktio "alkiot", jolle annetaan luvut a ja b. se palauttaa listana numerot a:sta b:hen.
 # x = int(input("anna luku1:"))
 # y = int(input("anna luku2:"))
-# def alkiot(luku1,luku2):
+# def alkiot(lista,luku1,luku2):
 #     laskuri = luku1
 #     while laskuri <= luku2:
-#         print(laskuri)
+#         print(lista[laskuri])
 #         laskuri += 1
 #     return laskuri
-# alkiot(x,y)
+# 
+# z = alkiot([5, 6, 8, 4, 55, 5, 55, 87, 47, 11, 26, 6, 98, 5],x,y)
 
 # 3.Tee funktio "etsi"
 # parametreina etsittava luku ja lista joka palauttaa etsittavan luvun indeksin, jos luku on listassa.
@@ -69,6 +70,7 @@
 # Anna operaatio stringinä "+", "-" tai "summa", "erotus"
 # Jokaista operaatiota varten tee funktio, jota kutsutaan (vrt. tehtävä 1)
 # Edellisen laskun arvo jää muistiin
+
 # def summa(luku1,luku2):
 #     return(luku1 + luku2)
 # def erotus(luku1,luku2):
@@ -115,18 +117,27 @@
 # eli kohdasta "alku" alkaen "monta" palaa. Jos lista loppuu ennenkuin "monta" tulee tayteen
 # palautetaan se, mikä pystytään.
 
+# def pala(lista, alku, monta):
+#     tulos = []
+#     for i in range(len(lista)):
+#         if i >= alku:
+#             tulos.append(lista[i])
+#         if i == alku + monta - 1:
+#             return tulos
+#     return tulos
+# uusipala = pala([2,4,56,78,9,6,4,3,6,8,9], 3, 15) # [78,9,6,4]
+# print(uusipala)
 
+# 9) Tee funktio, joka katsoo, onko elementtiä x vierekkäisillä listan paikoilla. Funktio palauttaa nämä paikat
 
-
-uusipala = pala([2,4,56,78,9,6,4,3,6,8,9,], 3,4) # [78,9,6,4]
-print(uusipala)
-
-
-
-
-
-
-
+# def viereinen(lista,x):
+#     tulos = []
+#     for i in range(len(lista)):
+#         if (i != len(lista) - 1 and lista[i + 1] == x) or (lista[i - 1] == x and i != 0):
+#             tulos.append(i)
+#     return tulos
+# a = viereinen([0,0,1,0,0,1],1)
+# print(a)
 
 
 

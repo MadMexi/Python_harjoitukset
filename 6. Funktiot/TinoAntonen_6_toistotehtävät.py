@@ -57,6 +57,25 @@
 
 # 8) Taulukossa on alkiot [1,2,4, "Alma",10, 20, [12,23], "Bill","Crubbe",5,"Dirf","Embu"].
 # Tee funktio, joka tulostaa taulukon alkiot, jos se on stringi, eli sana. Jos se on numero, sitä ei tulosteta, vaan tulostetaan "On numero.".
-# Käytä funktiota typeof(x), jossa x on muuttuja, jota tarkastellaan.
+# Käytä funktiota type(x), jossa x on muuttuja, jota tarkastellaan.
 
-def tulostus(lista)
+# def tulostus(lista):
+#     for x in range(len(lista)):
+#         if type(lista[x]) == str:
+#             print(lista[x])
+#         elif type(lista[x]) == int:
+#             print("on numero")
+#         elif type(lista[x]) == list:
+#             for y in range(len(lista[x])):
+#                 if type(lista[x]) == str:
+#                     print(lista[x][y])
+#                 elif type(lista[x][y]) == int:
+#                     print("on numero")
+# y = tulostus([1,2,4, "Alma",10, 20, [12,23], "Bill","Crubbe",5,"Dirf","Embu"])
+
+
+
+
+
+
+
